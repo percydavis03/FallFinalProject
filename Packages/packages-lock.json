@@ -127,11 +127,8 @@
     },
     "com.unity.ugui": {
       "version": "1.0.0",
-<<<<<<< HEAD
       "depth": 1,
-=======
       "depth": 2,
->>>>>>> thirdpersoncontroller
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
