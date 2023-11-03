@@ -282,11 +282,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD
 --- !u!1 &709408481
 =======
 --- !u!1 &799327811
->>>>>>> thirdpersoncontroller
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,14 +292,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 709408484}
   - component: {fileID: 709408483}
   - component: {fileID: 709408482}
   m_Layer: 0
   m_Name: Sound Manager
   m_TagString: Untagged
-=======
   - component: {fileID: 799327812}
   - component: {fileID: 799327819}
   - component: {fileID: 799327818}
@@ -313,12 +309,10 @@ GameObject:
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
->>>>>>> thirdpersoncontroller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!82 &709408482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -430,15 +424,12 @@ MonoBehaviour:
   audioSource: {fileID: 709408482}
   audioLibrary: {fileID: 11400000, guid: 5e3f0b3c5388891408be5539e6109b9f, type: 2}
 --- !u!4 &709408484
-=======
 --- !u!4 &799327812
->>>>>>> thirdpersoncontroller
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 709408481}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -448,7 +439,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 799327811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -641,7 +631,6 @@ MonoBehaviour:
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
->>>>>>> thirdpersoncontroller
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,11 +864,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1188512932
-=======
 --- !u!1 &1521277673
->>>>>>> thirdpersoncontroller
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -887,22 +873,18 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 1188512934}
   - component: {fileID: 1188512933}
   m_Layer: 0
   m_Name: Dialog Trigger
-=======
   - component: {fileID: 1521277674}
   m_Layer: 0
   m_Name: charlookpoint
->>>>>>> thirdpersoncontroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!114 &1188512933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,15 +900,12 @@ MonoBehaviour:
   dialogAsset: {fileID: 11400000, guid: 6ebfe6d13d5e6e048adcc5d45ed34a34, type: 2}
   dialogPreffab: {fileID: 7919614849001980615, guid: e01f8137f03a7de4d94f16842f3d27d0, type: 3}
 --- !u!4 &1188512934
-=======
 --- !u!4 &1521277674
->>>>>>> thirdpersoncontroller
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1188512932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1004,7 +983,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 1521277673}
   serializedVersion: 2
   m_LocalRotation: {x: 0.11569894, y: -0, z: -0, w: 0.9932844}
@@ -1014,19 +992,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 799327812}
   m_LocalEulerAnglesHint: {x: 13.288, y: 0, z: 0}
->>>>>>> thirdpersoncontroller
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-<<<<<<< HEAD
   - {fileID: 1956590576}
   - {fileID: 1188512934}
   - {fileID: 709408484}
-=======
   - {fileID: 1084143923}
   - {fileID: 799327812}
   - {fileID: 162191435}
->>>>>>> thirdpersoncontroller
