@@ -1225,7 +1225,7 @@ Transform:
   m_GameObject: {fileID: 297164725}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0027678886, y: -0, z: -0, w: 0.9999962}
-  m_LocalPosition: {x: 1.379042, y: 9.769149, z: 15.7005}
+  m_LocalPosition: {x: 1.4514937, y: 12.10728, z: 16.472427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4106,8 +4106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 8
-  SprintSpeed: 14
+  MoveSpeed: 10
+  SprintSpeed: 17
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   LandingAudioClip: {fileID: 0}
@@ -4704,7 +4704,7 @@ Transform:
   m_GameObject: {fileID: 1381348046}
   serializedVersion: 2
   m_LocalRotation: {x: 0.08850319, y: 0, z: 0, w: 0.9960759}
-  m_LocalPosition: {x: 0.075, y: 1.951, z: -4.295}
+  m_LocalPosition: {x: 0.08, y: 2.69, z: -4.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6166,7 +6166,7 @@ Transform:
   m_GameObject: {fileID: 1895120659}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0050414843, y: 0.9944585, z: -0.08835948, w: -0.05674034}
-  m_LocalPosition: {x: 1.379042, y: 9.769149, z: 15.7005}
+  m_LocalPosition: {x: 1.4514937, y: 12.10728, z: 16.472427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
