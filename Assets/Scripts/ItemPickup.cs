@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class ItemPickup : MonoBehaviour
 {
     public Item Item;
-
+    public bool canPickup = false;
     void Pickup()
     {
         InventoryManager.Instance.Add(Item);
@@ -17,13 +17,20 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Keyboard.current.fKey.isPressed)
-        {
-            Pickup();
-        }
+      canPickup = true;
     }
 
-
+    private void Update()
+    {
+        if (canPickup)
+        {
+            if (Keyboard.current.fKey.isPressed)
+            {
+                Pickup();
+            }
+        }
+        
+    }
     /*private void OnMouseDown()
     {
         Pickup();
