@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23131e08a4b7dbb4299553a920f52f6a, type: 3}
   m_Name: ExampleStory
   m_EditorClassIdentifier: 
-  storyJson: {fileID: 4900000, guid: 568ab298bbf45e743820520f79950a6d, type: 3}
+  storyJson: {fileID: 4900000, guid: c83d8f21035c79446914284ba4ccd01f, type: 3}
   portrait: {fileID: 21300000, guid: 8ff0c6d7629dc2a41b445e59ec025728, type: 3}
   animatorController: {fileID: 9100000, guid: 8e90f8a53351fba46ad7965b14fd8ae7, type: 2}
