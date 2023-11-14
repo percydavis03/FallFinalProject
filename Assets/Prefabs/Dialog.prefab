@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70109f4e2684b8c4a8a4889e10e5c0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyJson: {fileID: 4900000, guid: 568ab298bbf45e743820520f79950a6d, type: 3}
+  storyJson: {fileID: 4900000, guid: c83d8f21035c79446914284ba4ccd01f, type: 3}
   rightText: {fileID: 2054030532298508075}
   optionUIs:
   - {fileID: 6002527957917170577}
