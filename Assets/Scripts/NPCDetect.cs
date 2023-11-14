@@ -5,11 +5,25 @@ using UnityEngine.InputSystem;
 
 public class NPCDetect : MonoBehaviour
 {
-    bool player_detection = false;
+    public bool playerDetection;
+
+    void Start()
+    {
+        playerDetection = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("DialogueInteractPopUp");
+        if (other.name == "Player")
+        {
+            playerDetection = true;
+        }
+    }
 
     void Update()
     {
-        if (player_detection == true)
+        if (playerDetection == true)
         {
             if (Keyboard.current.fKey.isPressed)
             {
@@ -18,19 +32,9 @@ public class NPCDetect : MonoBehaviour
         }
     }
 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("DialogueInteractPopUp");
-        if (other.name == "Player")
-        {
-            player_detection = true;
-        }
-    }
-
     private void OnTriggerExit(Collider other)
     {
-        player_detection = false;
+        playerDetection = false;
     }
 
 }
