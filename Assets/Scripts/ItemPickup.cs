@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class ItemPickup : MonoBehaviour
 {
@@ -13,8 +15,17 @@ public class ItemPickup : MonoBehaviour
 
     }
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (Keyboard.current.fKey.isPressed)
+        {
+            Pickup();
+        }
+    }
+
+
+    /*private void OnMouseDown()
     {
         Pickup();
-    }
+    }*/
 }
