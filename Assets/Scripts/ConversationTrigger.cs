@@ -20,7 +20,7 @@ public class ConversationTrigger : MonoBehaviour
 
         storyManager.storyJson = dialogAsset.storyJson;
         storyManager.rightImage.sprite = dialogAsset.portrait;
-        storyManager.RightAnimator.runtimeAnimatorController = dialogAsset.animatorController;
+        //storyManager.RightAnimator.runtimeAnimatorController = dialogAsset.animatorController;
 
     }
 
