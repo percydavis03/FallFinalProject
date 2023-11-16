@@ -9,7 +9,7 @@ public class StoryManager : MonoBehaviour
     public TextAsset storyJson;
     public Text leftText, rightText;
     public OptionUI[] optionUIs;
-    public Animator rightAnimator;
+    //public Animator rightAnimator;
     public Animator leftAnimator;
     public Image rightImage;
     public Image leftImage;
@@ -127,7 +127,7 @@ public class StoryManager : MonoBehaviour
         if (ourStory.currentTags.Contains("them"))
         {
             rightText.text += text;
-            currentAnimator = rightAnimator;
+            //currentAnimator = rightAnimator;
         }
 
         foreach (string tag in ourStory.currentTags)
