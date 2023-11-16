@@ -7,10 +7,11 @@ using Ink.Runtime;
 public class StoryManager : MonoBehaviour
 {
     public TextAsset storyJson;
-    public Text leftText, rightText;
+    //public Text leftText;
+    public Text rightText;
     public OptionUI[] optionUIs;
-    //public Animator rightAnimator;
-    public Animator leftAnimator;
+    public Animator rightAnimator;
+    //public Animator leftAnimator;
     public Image rightImage;
     public Image leftImage;
     Story ourStory;
@@ -85,7 +86,7 @@ public class StoryManager : MonoBehaviour
                 {
                   optionUIs[i].SetVisible(true);
                   optionUIs[i].SetOptionText (options[i]);
-                optionUIs[i].SetSelected(i == currentOption);  
+                  optionUIs[i].SetSelected(i == currentOption);  
                 }
             }
         }
@@ -93,7 +94,7 @@ public class StoryManager : MonoBehaviour
         public void PickOption(int index)
         {
 
-         leftText.text = "";
+         //leftText.text = "";
          rightText.text = "";
 
 
@@ -120,14 +121,14 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.currentTags.Contains("you"))
         {
-            leftText.text += text;
-            currentAnimator = leftAnimator;
+            //leftText.text += text;
+            //currentAnimator = leftAnimator;
         }
 
         if (ourStory.currentTags.Contains("them"))
         {
             rightText.text += text;
-            //currentAnimator = rightAnimator;
+            currentAnimator = rightAnimator;
         }
 
         foreach (string tag in ourStory.currentTags)
