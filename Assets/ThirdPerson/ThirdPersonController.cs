@@ -75,6 +75,8 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
+        public GameObject dialog;
+
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
@@ -268,8 +270,21 @@ namespace StarterAssets
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
             // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            if(!dialog.activeInHierarchy)
+            {
+                _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
+                                 new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+                LockCameraPosition = false;
+            }
+            else if (dialog.activeInHierarchy)
+            {
+                _controller.Move (new Vector3(0, 0, 0));
+                LockCameraPosition = true;
+                
+            }
+            
+
+                
 
             // update animator if using character
             if (_hasAnimator)

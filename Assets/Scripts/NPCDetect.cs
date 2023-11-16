@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class NPCDetect : MonoBehaviour
 {
     public bool playerDetection;
+    public GameObject DialogBox;
 
     void Start()
     {
@@ -15,26 +16,28 @@ public class NPCDetect : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("DialogueInteractPopUp");
-        if (other.name == "Player")
+        if (other.tag == "Player")
         {
             playerDetection = true;
+            print("we touch a player");
         }
     }
 
     void Update()
     {
-        if (playerDetection == true)
+        if (playerDetection && Input.GetKeyDown(KeyCode.F))
         {
-            if (Keyboard.current.fKey.isPressed)
-            {
-                Debug.Log("Dialogue start");
-            }
+            DialogBox.SetActive(true);
+            print("Dialogue Started!");
         }
+       
+       
     }
 
     private void OnTriggerExit(Collider other)
     {
         playerDetection = false;
+        DialogBox.SetActive(false);
     }
 
 }
