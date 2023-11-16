@@ -7,11 +7,12 @@ using Ink.Runtime;
 public class StoryManager : MonoBehaviour
 {
     public TextAsset storyJson;
-    public Text  rightText;
+    public Text leftText, rightText;
     public OptionUI[] optionUIs;
-    public Animator RightAnimator;
+    public Animator rightAnimator;
+    public Animator leftAnimator;
     public Image rightImage;
-
+    public Image leftImage;
     Story ourStory;
     int currentOption = 0;
 
@@ -91,11 +92,13 @@ public class StoryManager : MonoBehaviour
 
         public void PickOption(int index)
         {
-            
-            rightText.text = "";
-           
 
-            if(ourStory.canContinue)
+         leftText.text = "";
+         rightText.text = "";
+
+
+
+        if (ourStory.canContinue)
             {
             AdvanceStory();
             }
@@ -112,14 +115,25 @@ public class StoryManager : MonoBehaviour
     void AdvanceStory()
     {
         string text = ourStory.Continue();
-        rightText.text += text;
+        Animator currentAnimator = null;
+
+
+        if (ourStory.currentTags.Contains("you"))
+        {
+            leftText.text += text;
+            currentAnimator = leftAnimator;
+        }
+
+        if (ourStory.currentTags.Contains("them"))
+        {
+            rightText.text += text;
+            currentAnimator = rightAnimator;
+        }
+
         foreach (string tag in ourStory.currentTags)
         {
 
-
             bool didSomething = false;
-
-        
 
 
             if (tag.StartsWith("sound;"))
@@ -135,15 +149,15 @@ public class StoryManager : MonoBehaviour
             if (tag.StartsWith("anim;"))
             {
                 string[] parts = tag.Split(';');
-                string animeName = parts[1];
+                string animName = parts[1];
 
-                if(RightAnimator != null)
+                if (currentAnimator != null)
                 {
-                    RightAnimator.SetTrigger(animeName);
+                    currentAnimator.SetTrigger(animName);
                 }
                 else
                 {
-                    Debug.LogError("anime tag found but without a character to use!");
+                    Debug.LogError("anim tag found but without a character to use!");
                 }
                 didSomething = true;
 
@@ -155,16 +169,16 @@ public class StoryManager : MonoBehaviour
         }
     }
 
-    void ArrayIndexingExample(int slot)
-    {
-        string[] text = new string[3] {"first", "second", "third" };
-        int[] numbers = new int[5] { 234, 567, 654, 10, 12};
+    //void ArrayIndexingExample(int slot)
+    //{
+        //string[] text = new string[3] {"first", "second", "third" };
+        //int[] numbers = new int[5] { 234, 567, 654, 10, 12};
 
-        text[slot] = "Hello, world.";
-        numbers[slot] = 123;
+        //text[slot] = "Hello, world.";
+        //numbers[slot] = 123;
 
 
-    }
+    //}
 
 } 
 
