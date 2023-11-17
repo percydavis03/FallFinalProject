@@ -117,9 +117,9 @@ public class StoryManager : MonoBehaviour
     {
         string text = ourStory.Continue();
         Animator currentAnimator = null;
+        rightText.text += text;
 
-
-        if (ourStory.currentTags.Contains("you"))
+        /*if (ourStory.currentTags.Contains("you"))
         {
             //leftText.text += text;
             //currentAnimator = leftAnimator;
@@ -127,9 +127,9 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.currentTags.Contains("them"))
         {
-            rightText.text += text;
-            currentAnimator = rightAnimator;
-        }
+            //rightText.text += text;
+            //currentAnimator = rightAnimator;
+        }*/
 
         foreach (string tag in ourStory.currentTags)
         {

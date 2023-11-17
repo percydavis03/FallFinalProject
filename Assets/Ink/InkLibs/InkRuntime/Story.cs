@@ -2776,6 +2776,8 @@ namespace Ink.Runtime
             }
 
             throw new System.Exception ("Should never reach here");
+
+
         }
 
         // Throw an exception that gets caught and causes AddError to be called,
@@ -2814,6 +2816,7 @@ namespace Ink.Runtime
                 state.ForceEnd ();
         }
 
+        //public GameObject DialogBox;
         void Assert(bool condition, string message = null, params object[] formatParams)
         {
             if (condition == false) {
@@ -2822,9 +2825,16 @@ namespace Ink.Runtime
                 }
                 if (formatParams != null && formatParams.Count() > 0) {
                     message = string.Format (message, formatParams);
+
                 }
+                /*else (DialogBox)
+                {
+
+                }*/
                     
                 throw new System.Exception (message + " " + currentDebugMetadata);
+
+               
             }
         }
 

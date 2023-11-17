@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class NPCDetect : MonoBehaviour
 {
     public bool playerDetection;
     public GameObject DialogBox;
+    public GameObject ButtonPopup;
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class NPCDetect : MonoBehaviour
         if (other.tag == "Player")
         {
             playerDetection = true;
+            ButtonPopup.SetActive(true);
             print("we touch a player");
         }
     }
@@ -29,6 +32,7 @@ public class NPCDetect : MonoBehaviour
         {
             DialogBox.SetActive(true);
             print("Dialogue Started!");
+            ButtonPopup.SetActive(false);
         }
        
        
