@@ -14,8 +14,10 @@ public class StoryManager : MonoBehaviour
     //public Animator leftAnimator;
     public Image rightImage;
     public Image leftImage;
+    public GameObject DialogBox;
     Story ourStory;
     int currentOption = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,14 +35,25 @@ public class StoryManager : MonoBehaviour
         {
             options[0] = "Continue";
         }
-        else
+        else 
         {
-          for(int i = 0; i < ourStory.currentChoices.Count; i++)
+            for (int i = 0; i < ourStory.currentChoices.Count; i++)
             {
                 options[i] = ourStory.currentChoices[i].text;
             }
+            print(ourStory.canContinue);
+           
+            
+            if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 )
+            {
+                DialogBox.SetActive(false);
+                ourStory.ResetState();
+                SetupOptions(options);
 
+            }
+            print(ourStory.currentChoices.Count);
         }
+        
           
 
             SetupOptions(options);
