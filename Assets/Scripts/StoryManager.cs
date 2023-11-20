@@ -40,6 +40,7 @@ public class StoryManager : MonoBehaviour
             for (int i = 0; i < ourStory.currentChoices.Count; i++)
             {
                 options[i] = ourStory.currentChoices[i].text;
+                print(options[i]);
             }
             print(ourStory.canContinue);
            
@@ -48,10 +49,10 @@ public class StoryManager : MonoBehaviour
             {
                 DialogBox.SetActive(false);
                 ourStory.ResetState();
-                SetupOptions(options);
+                
 
             }
-            print(ourStory.currentChoices.Count);
+            print(options.Length);
         }
         
           
@@ -85,22 +86,25 @@ public class StoryManager : MonoBehaviour
         }
 
 
+
     }
+
 
         void SetupOptions(string[] options)
         {
             for (int i = 0; i < 3; i++)
             {
-                if (options[i] == null)
+               /* if (options[i] == null)
                 {
+                print("We are empty");
                     optionUIs[i].gameObject.SetActive(false);
-                }
-                else
-                {
+                }*/
+                //else
+               // {
                   optionUIs[i].SetVisible(true);
                   optionUIs[i].SetOptionText (options[i]);
                   optionUIs[i].SetSelected(i == currentOption);  
-                }
+              //  }
             }
         }
 
