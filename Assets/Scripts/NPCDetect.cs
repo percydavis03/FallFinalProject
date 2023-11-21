@@ -34,14 +34,17 @@ public class NPCDetect : MonoBehaviour
             print("Dialogue Started!");
             ButtonPopup.SetActive(false);
         }
-       
-       
+
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        playerDetection = false;
-        DialogBox.SetActive(false);
-    }
+        if (playerDetection && Input.GetKeyDown(KeyCode.Escape))
+        {
+            playerDetection = false;
+            DialogBox.SetActive(false);
+        }
 
+    }
 }
