@@ -31,6 +31,7 @@ public class OptionUI : MonoBehaviour
 
     public void SetVisible(bool visible)
     {
+       
         OptionText.gameObject.SetActive(visible);
         seletionIndicator.gameObject.SetActive(visible);
         backgroundImage.gameObject.SetActive(visible);

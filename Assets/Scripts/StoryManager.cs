@@ -94,17 +94,17 @@ public class StoryManager : MonoBehaviour
         {
             for (int i = 0; i < 3; i++)
             {
-               /* if (options[i] == null)
+                if (options[i] == null)
                 {
                 print("We are empty");
-                    optionUIs[i].gameObject.SetActive(false);
-                }*/
-                //else
-               // {
+                    optionUIs[i].SetVisible(false);
+                }
+                else
+                {
                   optionUIs[i].SetVisible(true);
                   optionUIs[i].SetOptionText (options[i]);
                   optionUIs[i].SetSelected(i == currentOption);  
-              //  }
+                }
             }
         }
 
