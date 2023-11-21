@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("Startstalking");
             }
             
-            else if(Input.GetKeyDown(KeyCode.Space) && isTalking == true)
+            else if(Input.GetKeyDown(KeyCode.Escape) && isTalking == true)
             {
                 EndDialogue();
                 Debug.Log("endstheconversation");
