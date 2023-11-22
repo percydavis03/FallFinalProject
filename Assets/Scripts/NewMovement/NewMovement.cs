@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     void SimilarFunction(int option)
     {
-        Debug.Log($"Similar functino happened with: {option}");
+        Debug.Log($"Similar functino happened with: {option}"); 
     }
 
     // Update is called once per frame
