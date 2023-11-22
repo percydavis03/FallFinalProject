@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveSpeed = 10;
+        float moveSpeed = 40;
         float rotateSpeed = 100;
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();

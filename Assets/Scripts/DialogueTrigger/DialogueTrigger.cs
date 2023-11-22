@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DialogueTrigger : MonoBehaviour
-{
+//public class DialogueTrigger : MonoBehaviour
+/*{
     [Header("Visual Cue")]
     [SerializeField] private GameObject VisalCue;
 
@@ -50,4 +50,4 @@ public class DialogueTrigger : MonoBehaviour
             playerInRange = false;
         }
     }
-}
+}*/
