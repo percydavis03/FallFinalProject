@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
+    public GameObject dialog;
 
     bool lastJumpPressed = false;
 
@@ -28,14 +29,20 @@ public class PlayerController : MonoBehaviour
         float rotateSpeed = 100;
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
-        transform.position += transform.forward * moveInput.y * Time.deltaTime * moveSpeed;
-        transform.rotation = Quaternion.Euler(Vector3.up * moveInput.x * rotateSpeed * Time.deltaTime) * transform.rotation;
-
-        if (jumpAction.action.IsPressed() && !lastJumpPressed)
+        if (!dialog.activeInHierarchy)
         {
-            transform.position += new Vector3(0, 1, 0);
-        }
+            transform.position += transform.forward * moveInput.y * Time.deltaTime * moveSpeed;
+            transform.rotation = Quaternion.Euler(Vector3.up * moveInput.x * rotateSpeed * Time.deltaTime) * transform.rotation;
 
-        lastJumpPressed = jumpAction.action.IsPressed();
+            if (jumpAction.action.IsPressed() && !lastJumpPressed)
+            {
+                transform.position += new Vector3(0, 1, 0);
+            }
+
+            lastJumpPressed = jumpAction.action.IsPressed();
+        }
+            
+
+       
     }
 }

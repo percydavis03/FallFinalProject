@@ -99,6 +99,7 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+        public bool canMove;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -156,12 +157,21 @@ namespace StarterAssets
 
         private void Update()
         {
+            
+
             _hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+          
+            
+
+            
         }
+
+      
 
         private void LateUpdate()
         {
@@ -212,6 +222,7 @@ namespace StarterAssets
             CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride,
                 _cinemachineTargetYaw, 0.0f);
         }
+
 
         private void Move()
         {

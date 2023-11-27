@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
+using System;
+using StarterAssets;
+using UnityEngine.InputSystem.Android;
 
 public class StoryManager : MonoBehaviour
 {
@@ -17,6 +20,7 @@ public class StoryManager : MonoBehaviour
     public GameObject DialogBox;
     Story ourStory;
     int currentOption = 0;
+   
     
 
     // Start is called before the first frame update
@@ -24,6 +28,7 @@ public class StoryManager : MonoBehaviour
     {
         ourStory = new Story(storyJson.text);
         AdvanceStory();
+        
     }
 
     // Update is called once per frame
@@ -37,19 +42,23 @@ public class StoryManager : MonoBehaviour
         }
         else 
         {
-            for (int i = 0; i < ourStory.currentChoices.Count; i++)
-            {
-                options[i] = ourStory.currentChoices[i].text;
-                print(options[i]);
-            }
-            print(ourStory.canContinue);
-           
             
-            if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 )
+            
+                for (int i = 0; i < ourStory.currentChoices.Count; i++)
+                {
+                    options[i] = ourStory.currentChoices[i].text;
+                    print(options[i]);
+                }
+                print(ourStory.canContinue);
+                print(ourStory.currentChoices.Count);
+
+            
+            
+            if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 && rightText.text == "")
             {
                 DialogBox.SetActive(false);
                 ourStory.ResetState();
-                
+               
 
             }
             print(options.Length);
@@ -108,24 +117,28 @@ public class StoryManager : MonoBehaviour
             }
         }
 
-        public void PickOption(int index)
-        {
+    public void PickOption(int index)
+    {
 
-         //leftText.text = "";
-         rightText.text = "";
+        //leftText.text = "";
+        rightText.text = "";
 
 
 
         if (ourStory.canContinue)
-            {
+        {
             AdvanceStory();
-            }
-            else
-            {
+        }
+
+        
+
+        else
+        {
             ourStory.ChooseChoiceIndex(index);
             AdvanceStory();
-            }
-
+        }
+    
+          
         currentOption = 0;
 
         }
@@ -185,6 +198,8 @@ public class StoryManager : MonoBehaviour
                 Debug.LogError($"Couldn't intgerpret tag {tag}!");
             }
         }
+        
+     
     }
 
     //void ArrayIndexingExample(int slot)

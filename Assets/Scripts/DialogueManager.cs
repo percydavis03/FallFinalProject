@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     bool isTalking = false;
 
     float distance;
-    float curResponseTracker = 0;
+    //float curResponseTracker = 0;
 
     public GameObject player;
     public GameObject dialogueUI;
@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
     void StartConversation()
     {
         isTalking = true;
-        curResponseTracker = 0;
+        //curResponseTracker = 0;
         dialogueUI.SetActive(true);
         npcName.text = npcName.name;
         //npcDialogueBox.text = npc.dialogue[0];
