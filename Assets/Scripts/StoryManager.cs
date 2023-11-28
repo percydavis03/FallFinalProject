@@ -34,47 +34,47 @@ public class StoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            string[] options = new string[3];
+        string[] options = new string[3];
 
         if (ourStory.canContinue)
         {
             options[0] = "Continue";
         }
-        else 
+        else
         {
-            
-            
-                for (int i = 0; i < ourStory.currentChoices.Count; i++)
-                {
-                    options[i] = ourStory.currentChoices[i].text;
-                    print(options[i]);
-                }
-                print(ourStory.canContinue);
-                print(ourStory.currentChoices.Count);
 
-            
-            
+
+            for (int i = 0; i < ourStory.currentChoices.Count; i++)
+            {
+                options[i] = ourStory.currentChoices[i].text;
+                print(options[i]);
+            }
+            print(ourStory.canContinue);
+            print(ourStory.currentChoices.Count);
+
+
+
             if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 && rightText.text == "")
             {
                 DialogBox.SetActive(false);
                 ourStory.ResetState();
-               
+
 
             }
             print(options.Length);
         }
-        
-          
 
-            SetupOptions(options);
-            
-        
-        
-        
-        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+
+
+        SetupOptions(options);
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             currentOption++;
-            if(currentOption >= ourStory.currentChoices.Count)
+            if (currentOption >= ourStory.currentChoices.Count)
             {
                 currentOption = 0;
                 Debug.Log("dialogue needs to end");
@@ -87,25 +87,36 @@ public class StoryManager : MonoBehaviour
             if (currentOption < 0)
             {
                 currentOption = ourStory.currentChoices.Count - 1;
-                
+
             }
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("dialogue must stop");
             PickOption(currentOption);
-            if(currentOption == 0)
+            /*if(currentOption == 1)
             {
-                Debug.Log("Dialogue has ended");
-            }
+                DialogBox.SetActive(false);
+                Debug.Log("Dialogue has finally stop");
+            }*/
         }
 
-
-
+        bool canContinue = ourStory.canContinue;
+        bool hasChoices = ourStory.currentChoices.Count > 0;
+        bool storyOver = !canContinue && !hasChoices;
+       
+        if (storyOver)
+        {
+            DialogBox.SetActive(false);
+            Debug.Log("Dialogue has finally stop");
+        }
+        
+        
     }
 
 
-        void SetupOptions(string[] options)
+void SetupOptions(string[] options)
         {
             for (int i = 0; i < 3; i++)
             {
