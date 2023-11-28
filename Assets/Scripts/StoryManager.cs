@@ -77,6 +77,7 @@ public class StoryManager : MonoBehaviour
             if(currentOption >= ourStory.currentChoices.Count)
             {
                 currentOption = 0;
+                Debug.Log("dialogue needs to end");
             }
         }
 
@@ -86,12 +87,17 @@ public class StoryManager : MonoBehaviour
             if (currentOption < 0)
             {
                 currentOption = ourStory.currentChoices.Count - 1;
+                
             }
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PickOption(currentOption);
+            if(currentOption == 0)
+            {
+                Debug.Log("Dialogue has ended");
+            }
         }
 
 
@@ -128,6 +134,7 @@ public class StoryManager : MonoBehaviour
         if (ourStory.canContinue)
         {
             AdvanceStory();
+            
         }
 
         
@@ -136,12 +143,14 @@ public class StoryManager : MonoBehaviour
         {
             ourStory.ChooseChoiceIndex(index);
             AdvanceStory();
+            
         }
     
           
         currentOption = 0;
+        
 
-        }
+    }
 
     void AdvanceStory()
     {
