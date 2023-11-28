@@ -1163,6 +1163,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2941624962354944580, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 3132502418315725327, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.307121
@@ -1215,6 +1219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3679662854788218625, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 191a0751e4eadbe48a094e1488519374, type: 3}
     - target: {fileID: 7692700740964349027, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
       propertyPath: m_Name
       value: ItemTest
