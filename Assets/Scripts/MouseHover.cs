@@ -19,17 +19,28 @@ public class MouseHover : MonoBehaviour
         m_Renderer = GetComponent<MeshRenderer>();
         //Fetch the original color of the GameObject
         m_OriginalColor = m_Renderer.material.color;
+        GetComponent<Renderer>().material.SetFloat("Hover", 0);
     }
 
     void OnMouseOver()
     {
-        // Change the color of the GameObject to red when the mouse is over GameObject
-        m_Renderer.material.color = m_MouseOverColor;
+        GetComponent<Renderer>().material.SetFloat("Hover", 1);
     }
 
     void OnMouseExit()
     {
-        // Reset the color of the GameObject back to normal
-        m_Renderer.material.color = m_OriginalColor;
+        GetComponent<Renderer>().material.SetFloat("Hover", 0);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Renderer>().material.SetFloat("Hover", 1);
+        }
+        else
+        {
+            GetComponent<Renderer>().material.SetFloat("Hover", 0);
+        }
     }
 }

@@ -25,13 +25,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveSpeed = 40;
-        float rotateSpeed = 100;
+        float moveSpeed = 25;
+        float rotateSpeed = 180;
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
         if (!dialog.activeInHierarchy)
         {
-            transform.position += transform.forward * moveInput.y * Time.deltaTime * moveSpeed;
+            transform.position += -transform.forward * moveInput.y * Time.deltaTime * moveSpeed;
             transform.rotation = Quaternion.Euler(Vector3.up * moveInput.x * rotateSpeed * Time.deltaTime) * transform.rotation;
 
             if (jumpAction.action.IsPressed() && !lastJumpPressed)
