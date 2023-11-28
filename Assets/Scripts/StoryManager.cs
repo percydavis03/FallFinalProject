@@ -56,8 +56,8 @@ public class StoryManager : MonoBehaviour
 
             if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 && rightText.text == "")
             {
-                DialogBox.SetActive(false);
-                ourStory.ResetState();
+                //DialogBox.SetActive(false);
+                //ourStory.ResetState();
 
 
             }
@@ -109,6 +109,7 @@ public class StoryManager : MonoBehaviour
         if (storyOver)
         {
             DialogBox.SetActive(false);
+            ourStory.ResetState();
             Debug.Log("Dialogue has finally stop");
         }
         
