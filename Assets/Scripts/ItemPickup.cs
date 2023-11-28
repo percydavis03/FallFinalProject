@@ -20,7 +20,7 @@ public class ItemPickup : MonoBehaviour
       canPickup = true;
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (canPickup)
         {
@@ -30,9 +30,9 @@ public class ItemPickup : MonoBehaviour
             }
         }
         
-    }
-    /*private void OnMouseDown()
+    }*/
+    private void OnMouseDown()
     {
         Pickup();
-    }*/
+    }
 }
