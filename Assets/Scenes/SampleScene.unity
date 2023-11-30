@@ -759,6 +759,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1346990427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7692700740964349027, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+  m_PrefabInstance: {fileID: 2868545662504577483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346990434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346990427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b957feba19105c4cb82804c1ef45d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478612789
 GameObject:
   m_ObjectHideFlags: 3
@@ -1247,13 +1264,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1394207275782788424, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+      propertyPath: Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e5fc62540869084b9c391f6bf38397b, type: 2}
+    - target: {fileID: 609110130263669143, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+      propertyPath: Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e5fc62540869084b9c391f6bf38397b, type: 2}
     - target: {fileID: 3132502418315725327, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 887
+      value: 1337
       objectReference: {fileID: 0}
     - target: {fileID: 3132502418315725327, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 415.4623
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 3132502418315725327, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1294,7 +1319,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7692700740964349027, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1346990434}
   m_SourcePrefab: {fileID: 100100000, guid: 95b0d700a19082a40b9557b74eb0e9a3, type: 3}
 --- !u!1001 &6728759760144154892
 PrefabInstance:
