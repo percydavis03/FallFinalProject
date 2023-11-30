@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public GameObject dialog;
 
     bool lastJumpPressed = false;
+   [SerializeField] float moveSpeed = 25;
+    float rotateSpeed = 180;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +27,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveSpeed = 25;
-        float rotateSpeed = 180;
+       
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
         if (!dialog.activeInHierarchy)

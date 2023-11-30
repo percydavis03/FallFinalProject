@@ -20,8 +20,14 @@ public class StoryManager : MonoBehaviour
     public GameObject DialogBox;
     Story ourStory;
     int currentOption = 0;
-   
     
+    
+    /*public void ResetState()
+    {
+
+    }*/
+
+
 
     // Start is called before the first frame update
     void Start()
