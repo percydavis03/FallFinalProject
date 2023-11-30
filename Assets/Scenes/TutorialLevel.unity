@@ -8630,6 +8630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b593eb64bf200bc4281d400e5e8904c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  where: 1
 --- !u!4 &1342289693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6637810413858829853, guid: 7b72a38abb57894489799ec19517fa30, type: 3}
