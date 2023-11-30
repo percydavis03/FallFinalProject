@@ -2372,10 +2372,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.046465114
+  m_Radius: 0.027288197
   m_Height: 0.12813582
   m_Direction: 1
-  m_Center: {x: -0.0074543576, y: 0.07162845, z: 0.008127853}
+  m_Center: {x: -0.0074543715, y: 0.07162845, z: 0.0059744706}
 --- !u!114 &306389446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5231,8 +5231,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.29088095
-  m_Center: {x: 0, y: -0.08057656, z: -0.12707484}
+  m_Radius: 0.21267654
+  m_Center: {x: 0, y: -0.07694384, z: -0.114347175}
 --- !u!23 &713211982
 MeshRenderer:
   m_ObjectHideFlags: 0
