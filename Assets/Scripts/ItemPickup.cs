@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,29 +9,33 @@ public class ItemPickup : MonoBehaviour
 {
     public Item Item;
     public bool canPickup = false;
+    public GameObject pickupInstructions;
     void Pickup()
     {
         InventoryManager.Instance.Add(Item);
+        pickupInstructions.SetActive(false);
         Destroy(gameObject);
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-      canPickup = true;
+        pickupInstructions.SetActive(true);
+        canPickup = true;
     }
 
-    /*private void Update()
+    private void Update()
     {
         if (canPickup)
         {
-            if (Keyboard.current.fKey.isPressed)
+            if (Keyboard.current.rKey.isPressed)
             {
+                
                 Pickup();
             }
         }
         
-    }*/
+    }
     private void OnMouseDown()
     {
         Pickup();
