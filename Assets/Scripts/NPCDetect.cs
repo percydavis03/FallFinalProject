@@ -40,11 +40,11 @@ public class NPCDetect : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (playerDetection && Input.GetKeyDown(KeyCode.Escape))
-        {
+        
             playerDetection = false;
             DialogBox.SetActive(false);
-        }
+            ButtonPopup.SetActive(false);
+            DialogBox.GetComponent<StoryManager>().ResetStory();
 
     }
 }

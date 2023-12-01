@@ -22,10 +22,14 @@ public class StoryManager : MonoBehaviour
     int currentOption = 0;
     
     
-    /*public void ResetState()
-    {
-
-    }*/
+     public void ResetStory()
+     {
+        if(ourStory != null)
+        {
+            ourStory.ResetState();
+        }
+        
+     }
 
 
 
@@ -101,15 +105,11 @@ public class StoryManager : MonoBehaviour
         {
             Debug.Log("dialogue must stop");
             PickOption(currentOption);
-            /*if(currentOption == 1)
-            {
-                DialogBox.SetActive(false);
-                Debug.Log("Dialogue has finally stop");
-            }*/
+          
         }
 
         bool canContinue = ourStory.canContinue;
-        bool hasChoices = ourStory.currentChoices.Count > 0;
+        bool hasChoices = ourStory.currentChoices.Count == 0;
         bool storyOver = !canContinue && !hasChoices;
        
         if (storyOver)
