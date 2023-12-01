@@ -109,13 +109,13 @@ public class StoryManager : MonoBehaviour
         }
 
         bool canContinue = ourStory.canContinue;
-        bool hasChoices = ourStory.currentChoices.Count == 0;
-        bool storyOver = !canContinue && !hasChoices;
+        bool hasChoices = ourStory.currentChoices.Count > 0;
+        bool storyOver = !canContinue && !hasChoices && rightText.text == "";
        
         if (storyOver)
         {
             DialogBox.SetActive(false);
-            ourStory.ResetState();
+            //ourStory.ResetState();
             Debug.Log("Dialogue has finally stop");
         }
         
