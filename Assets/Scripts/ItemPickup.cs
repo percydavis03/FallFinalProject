@@ -24,6 +24,12 @@ public class ItemPickup : MonoBehaviour
         canPickup = true;
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        pickupInstructions.SetActive(false);
+        canPickup = false;
+    }
+
     private void Update()
     {
         if (canPickup)
