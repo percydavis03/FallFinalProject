@@ -6,6 +6,7 @@ using Ink.Runtime;
 using System;
 using StarterAssets;
 using UnityEngine.InputSystem.Android;
+using UnityEditor.Rendering;
 
 public class StoryManager : MonoBehaviour
 {
@@ -174,6 +175,8 @@ void SetupOptions(string[] options)
         
 
     }
+
+    
 
     void AdvanceStory()
     {
