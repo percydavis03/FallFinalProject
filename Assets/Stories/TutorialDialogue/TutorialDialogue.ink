@@ -55,11 +55,11 @@ Syviis: Ooh let's just add the shimmerleaf, I can't really stomach the spice thi
 ===dragonLyra===
 Lyra:*squeals* Perfect! Exactly what I was thinking! Can you go and fetch some in the garden for me?
 
-*[Accept] -> end
+*[Accept] -> endstory
 ===shimmerLyra===
 Lyra:*sighs* Boohoo! You're no fun... but I must oblige. Can you grab me some in the back garden?
-*[Accept] -> end
+*[Accept] -> endstory
 
-===end===
+===endstory===
 Syviis: Will do!
 -> END

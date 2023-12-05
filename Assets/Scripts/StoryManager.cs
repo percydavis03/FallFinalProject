@@ -115,9 +115,12 @@ public class StoryManager : MonoBehaviour
         if (storyOver)
         {
             DialogBox.SetActive(false);
-            options[0] = null;
             SetupOptions(options);
             ourStory.ResetState();
+            for (int i = 0; i < 3; i++)
+            {
+                options[i] = null;
+            }
             Debug.Log("Dialogue has finally stop");
         }
         

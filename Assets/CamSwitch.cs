@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class CamSwitch : MonoBehaviour
 {
-    public GameObject cam1;
-    public GameObject cam2;
+    public GameObject maincam;
+    public GameObject Hagstonecam;
+    public GameObject Hagstone;
+    private bool stoneisActive;
     void Update()
     {
-        if (Input.GetKeyDown("1key"))
+        print(stoneisActive);
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            cam1.SetActive(true);
-            cam2.SetActive(false);
+            if (stoneisActive == false)
+            {
+                maincam.SetActive(false);
+                Hagstonecam.SetActive(true);
+                Hagstone.SetActive(true);
+                stoneisActive = true;
+              
+            }
+            else
+            {
+                maincam.SetActive(true);
+                Hagstonecam.SetActive(false);
+                Hagstone.SetActive(false);
+                stoneisActive = false;
+            }
         }
 
-        if (Input.GetKeyDown("1key"))
-        {
-            cam1.SetActive(false);
-            cam2.SetActive(true);
-        }
     }
 }
