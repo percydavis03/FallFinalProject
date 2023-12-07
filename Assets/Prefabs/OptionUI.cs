@@ -20,12 +20,12 @@ public class OptionUI : MonoBehaviour
         if (selcted)
         {
             seletionIndicator.gameObject.SetActive(true);
-            backgroundImage.color = new Color(0.6896307f, 0.2509804f, 0.9339623f);
+            backgroundImage.color = new Color(173f, 216f, 230f);
         }
         else
         {
             seletionIndicator.gameObject.SetActive(false);
-            backgroundImage.color = new Color(0.5850676f, 0.4789961f, 0.8679245f);
+            backgroundImage.color = new Color(112f, 128f, 144f);
         }
     }
 
