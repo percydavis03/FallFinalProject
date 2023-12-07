@@ -10,11 +10,12 @@ using UnityEngine.InputSystem.Android;
 public class StoryManager : MonoBehaviour
 {
     public TextAsset storyJson;
-    //public Text leftText;
+    public Text leftText;
     public Text rightText;
+    public Text midText;
     public OptionUI[] optionUIs;
     public Animator rightAnimator;
-    //public Animator leftAnimator;
+    public Animator leftAnimator;
     public Image rightImage;
     public Image leftImage;
     public GameObject DialogBox;
@@ -111,6 +112,8 @@ public class StoryManager : MonoBehaviour
     {
 
         rightText.text = "";
+        leftText.text = "";
+        midText.text = "";
 
         if (ourStory.canContinue)
         {
@@ -131,19 +134,24 @@ public class StoryManager : MonoBehaviour
     void AdvanceStory()
     {
         Animator currentAnimator = null;
-        rightText.text = ourStory.Continue();
+        string text = ourStory.Continue();
 
-        /*if (ourStory.currentTags.Contains("you"))
+        if (ourStory.currentTags.Contains("you"))
         {
-            //leftText.text += text;
-            //currentAnimator = leftAnimator;
+            leftText.text += text;
+            currentAnimator = leftAnimator;
         }
 
         if (ourStory.currentTags.Contains("them"))
         {
-            //rightText.text += text;
-            //currentAnimator = rightAnimator;
-        }*/
+            rightText.text += text;
+            currentAnimator = rightAnimator;
+        }
+
+        if (ourStory.currentTags.Contains("action"))
+        {
+            midText.text += text;
+        }
 
         foreach (string tag in ourStory.currentTags)
         {
