@@ -1,25 +1,44 @@
-Lyra: Oh... yay! Don't be mad at me, I added some dried pepper in the dish. I need that kick! I'll still add in the shimmerleaf don't you worry!
+#them
+Oh... yay! Don't be mad at me, I added some dried pepper in the dish. I need that kick! I'll still add in the shimmerleaf don't you worry!
 <i>Lyra adds the shimmerleaf into the eggs in purgatory</i>
 
 *[Continue] -> addS
 
 ===addS===
-Syviis: Wow!!! Okay it's your fault if my stomach hurts and makes me want to die.
+#you
+Wow!!! Okay it's your fault if my stomach hurts and makes me want to die.
 
 *[Continue] -> babyS
 
 ===babyS===
-Lyra: You're a baby.
+#them
+You're a baby.
 
-Syviis: No you.
+*[Continue] -> babyL
 
+===babyL===
+#you
+No you.
+*[Continue] -> action
+
+===action===
+#action
 <i> You both share a laugh while Lyra plates the eggs in purgatory.</i>
+*[Continue] -> action1
+
+===action1===
+#action
 <i> It feels good. </i>
-Lyra: Okay baby let's eat!
+
+*[Continue] -> timetoeat
+
+===timetoeat===
+#them
+Okay baby let's eat!
 
 *[Eat eggs in purgatory] -> munch
 
 ===munch===
-
+#action
 <i> *Chomp* </i>
 ->END

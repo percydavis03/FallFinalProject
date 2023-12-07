@@ -6,195 +6,152 @@ using Ink.Runtime;
 using System;
 using StarterAssets;
 using UnityEngine.InputSystem.Android;
-using UnityEditor.Rendering;
 
 public class StoryManager : MonoBehaviour
 {
     public TextAsset storyJson;
-    //public Text leftText;
+    public Text leftText;
     public Text rightText;
+    public Text midText;
     public OptionUI[] optionUIs;
     public Animator rightAnimator;
-    //public Animator leftAnimator;
+    public Animator leftAnimator;
     public Image rightImage;
     public Image leftImage;
     public GameObject DialogBox;
     Story ourStory;
     int currentOption = 0;
-    
-    
-     public void ResetStory()
-     {
-        if(ourStory != null)
+
+
+    public void ResetStory()
+    {
+        if (ourStory != null)
         {
             ourStory.ResetState();
         }
-        
-     }
 
-
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         ourStory = new Story(storyJson.text);
-        AdvanceStory();
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        string[] options = new string[3];
-
-        if (ourStory.canContinue)
-        {
-            options[0] = "Continue";
-        }
-        else
-        {
-
-
-            for (int i = 0; i < ourStory.currentChoices.Count; i++)
-            {
-                options[i] = ourStory.currentChoices[i].text;
-                print(options[i]);
-            }
-            print(ourStory.canContinue);
-            print(ourStory.currentChoices.Count);
-
-
-
-            if (!ourStory.canContinue && ourStory.currentChoices.Count == 0 && rightText.text == "")
-            {
-                //DialogBox.SetActive(false);
-                //ourStory.ResetState();
-
-
-            }
-            print(options.Length);
-        }
-
-
-
-        SetupOptions(options);
-
-
-
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            currentOption++;
-            if (currentOption >= ourStory.currentChoices.Count)
-            {
-                currentOption = 0;
-                Debug.Log("dialogue needs to end");
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-        {
-            currentOption--;
-            if (currentOption < 0)
-            {
-                currentOption = ourStory.currentChoices.Count - 1;
-
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("dialogue must stop");
-            PickOption(currentOption);
-          
-        }
-
         bool canContinue = ourStory.canContinue;
         bool hasChoices = ourStory.currentChoices.Count > 0;
         bool storyOver = !canContinue && !hasChoices && rightText.text == "";
-       
-        if (storyOver)
+        string[] options = new string[3];
+
+        if (canContinue)
+        {
+            AdvanceStory();
+            SetupOptions(options);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PickOption(currentOption);
+        }
+        else if (hasChoices)
+        {
+            for (int i = 0; i < ourStory.currentChoices.Count; i++)
+            {
+                options[i] = ourStory.currentChoices[i].text;
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            {
+                currentOption++;
+                if (currentOption >= ourStory.currentChoices.Count)
+                {
+                    currentOption = 0;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            {
+                currentOption--;
+                if (currentOption < 0)
+                {
+                    currentOption = ourStory.currentChoices.Count - 1;
+                }
+            }
+            SetupOptions(options);
+        }
+
+        else if (storyOver)
         {
             DialogBox.SetActive(false);
-            SetupOptions(options);
             ourStory.ResetState();
-            for (int i = 0; i < 3; i++)
-            {
-                options[i] = null;
-            }
             Debug.Log("Dialogue has finally stop");
         }
-        
-        
+
     }
 
-
-void SetupOptions(string[] options)
+    void SetupOptions(string[] options)
+    {
+        for (int i = 0; i < 3; i++)
         {
-            for (int i = 0; i < 3; i++)
+            if (options[i] == null)
             {
-                if (options[i] == null)
-                {
-                print("We are empty");
-                    optionUIs[i].SetVisible(false);
-                }
-                else
-                {
-                  optionUIs[i].SetVisible(true);
-                  optionUIs[i].SetOptionText (options[i]);
-                  optionUIs[i].SetSelected(i == currentOption);  
-                }
+                optionUIs[i].SetVisible(false);
+            }
+            else
+            {
+                optionUIs[i].SetVisible(true);
+                optionUIs[i].SetOptionText(options[i]);
+                optionUIs[i].SetSelected(i == currentOption);
             }
         }
+    }
+
 
     public void PickOption(int index)
     {
 
-        //leftText.text = "";
         rightText.text = "";
-
-
+        leftText.text = "";
+        midText.text = "";
 
         if (ourStory.canContinue)
         {
             AdvanceStory();
-            
+
         }
 
-        
-
-        else
+        else if (ourStory.currentChoices.Count > 0)
         {
+            print(ourStory.currentChoices.Count);
+            print("we are in print options");
             ourStory.ChooseChoiceIndex(index);
-            AdvanceStory();
-            
         }
-    
-          
+
         currentOption = 0;
-        
-
     }
-
-    
 
     void AdvanceStory()
     {
-        string text = ourStory.Continue();
         Animator currentAnimator = null;
-        rightText.text += text;
+        string text = ourStory.Continue();
 
-        /*if (ourStory.currentTags.Contains("you"))
+        if (ourStory.currentTags.Contains("you"))
         {
-            //leftText.text += text;
-            //currentAnimator = leftAnimator;
+            leftText.text += text;
+            currentAnimator = leftAnimator;
         }
 
         if (ourStory.currentTags.Contains("them"))
         {
-            //rightText.text += text;
-            //currentAnimator = rightAnimator;
-        }*/
+            rightText.text += text;
+            currentAnimator = rightAnimator;
+        }
+
+        if (ourStory.currentTags.Contains("action"))
+        {
+            midText.text += text;
+        }
 
         foreach (string tag in ourStory.currentTags)
         {
@@ -233,20 +190,6 @@ void SetupOptions(string[] options)
                 Debug.LogError($"Couldn't intgerpret tag {tag}!");
             }
         }
-        
-     
     }
 
-    //void ArrayIndexingExample(int slot)
-    //{
-        //string[] text = new string[3] {"first", "second", "third" };
-        //int[] numbers = new int[5] { 234, 567, 654, 10, 12};
-
-        //text[slot] = "Hello, world.";
-        //numbers[slot] = 123;
-
-
-    //}
-
-} 
-
+}
