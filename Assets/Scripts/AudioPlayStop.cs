@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayAudio : MonoBehaviour
+public class AudioPlayStop : MonoBehaviour
 {
     public AudioSource audioSource;
 
@@ -11,5 +11,8 @@ public class PlayAudio : MonoBehaviour
         audioSource.Play();
     }
 
-    
+    private void OnTriggerExit(Collider other)
+    {
+        audioSource = null;
+    }
 }

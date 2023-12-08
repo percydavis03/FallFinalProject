@@ -9,7 +9,7 @@ public class NPCDetect : MonoBehaviour
     public bool playerDetection;
     public GameObject DialogBox;
     public GameObject ButtonPopup;
-
+   
     void Start()
     {
         playerDetection = false;
@@ -24,7 +24,11 @@ public class NPCDetect : MonoBehaviour
             ButtonPopup.SetActive(true);
             print("we touch a player");
         }
+        
+      
     }
+
+   
 
     void Update()
     {

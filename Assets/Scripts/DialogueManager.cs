@@ -14,12 +14,15 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject player;
     public GameObject dialogueUI;
+ 
+
+
 
     public Text npcName;
     public Text npcDialogueBox;
     public Text playerResponse;
 
-
+   
 
 
     // Start is called before the first frame update
@@ -66,4 +69,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
 
     }
+
+  
+
 }

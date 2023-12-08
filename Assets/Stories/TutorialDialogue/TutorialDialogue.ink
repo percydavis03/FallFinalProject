@@ -1,8 +1,9 @@
 #them
 Goodness Syviis, slept in a bit again?
-
-* [I like my sleep...] -> sleepChoice
-* [A weird dream...] -> dreamChoice
+#action
+    <b> [press Space to continue] </b>
+* [(W)I like my sleep...] -> sleepChoice
+* [(S)A weird dream...] -> dreamChoice
 
 ===sleepChoice===
 #you

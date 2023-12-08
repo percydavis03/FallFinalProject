@@ -297,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4289858482871384144, guid: c9a64ce3e63b6b944b51d860a641ea39, type: 3}
       propertyPath: m_Name
-      value: Dialogue Variant 1
+      value: DialogueFin
       objectReference: {fileID: 0}
     - target: {fileID: 5188126151943759509, guid: c9a64ce3e63b6b944b51d860a641ea39, type: 3}
       propertyPath: m_LocalScale.x
@@ -487,6 +487,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 212.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 7840783850827578029, guid: c9a64ce3e63b6b944b51d860a641ea39, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -494,7 +498,7 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 1945318048972823271}
     - targetCorrespondingSourceObject: {fileID: 6084433975734218351, guid: c9a64ce3e63b6b944b51d860a641ea39, type: 3}
-      insertIndex: 3
+      insertIndex: 5
       addedObject: {fileID: 4983555414297093617}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9a64ce3e63b6b944b51d860a641ea39, type: 3}
