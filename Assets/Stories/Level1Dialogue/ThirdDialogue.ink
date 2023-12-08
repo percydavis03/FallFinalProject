@@ -204,7 +204,7 @@ I don't know Lyra, putting your whole trust into some fairytale that was passed 
 
 ===Lyra18===
 #them 
-Fine. Believe in what you want to believe, and I'll believe in the Mother. I'm just looking out for you Syviis.'
+Fine. Believe in what you want to believe, and I'll believe in the Mother. I'm just looking out for you Syviis.
 *[Continue] -> Syviis15
 
 ===Syviis15===
