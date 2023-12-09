@@ -44,7 +44,7 @@ Well, yes... and no. I'm not sure if this requires a Seer's guidance. Any ways..
 
 
 ===ifChose1End===
-#them'
+#them
 #anim;Neutral
 Haha, you should be thanking me! But yes, I do need some help with choosing what to put in the eggs in purgatory I'm making. I was thinking some... dragon's breath for spice... or shimmerleaf for fun and tingles!
 
