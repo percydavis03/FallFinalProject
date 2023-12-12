@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class turnrendereron : MonoBehaviour
+public class revaleobject : MonoBehaviour
 {
-    private Renderer itemrenderer;
+    public GameObject itemrenderer;
     // Start is called before the first frame update
     void Start()
     {
-        itemrenderer = GetComponent<Renderer>();
-        
+       
+
     }
 
     // Update is called once per frame
@@ -17,13 +17,13 @@ public class turnrendereron : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            if (!itemrenderer.enabled)
+            if (!itemrenderer.activeInHierarchy)
             {
-                itemrenderer.enabled = true;
+                itemrenderer.SetActive(true);
             }
             else
             {
-                itemrenderer.enabled = false;
+                itemrenderer.SetActive(false);
             }
         }
     }
