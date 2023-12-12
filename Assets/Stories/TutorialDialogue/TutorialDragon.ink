@@ -42,7 +42,8 @@ Let's eat! Gotta fuel up for some good foraging today!
 
 ===munch===
 #action
+#sound;chomp
 <i> *Chomp* </i>
-
+*[Continue] -> END
 
 -> END

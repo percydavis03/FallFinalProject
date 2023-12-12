@@ -1,4 +1,5 @@
 #you
+#sound;fantasyOp
 Hey Lyra! Come over here, check this out.
 *[Continue] -> Lyra1
 
@@ -9,6 +10,7 @@ What did you find? Because I was just looking at the most cutest littl-
 
 ===Lyra2===
 #them
+
 How did you find that...
 *[Continue] -> Syviis1
 
