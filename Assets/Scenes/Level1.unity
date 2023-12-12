@@ -12185,7 +12185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b66001c262dc5545b128cee77e62df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 1598dab59376b6f4f81b54a4dfb0fda5, type: 2}
+  Item: {fileID: 11400000, guid: 55c6ed0d139dffa4fb6854faf9e81a49, type: 2}
 --- !u!114 &1378603757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12198,7 +12198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55ce38060dbc37489d49dfb9aae3583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 1598dab59376b6f4f81b54a4dfb0fda5, type: 2}
+  Item: {fileID: 11400000, guid: 55c6ed0d139dffa4fb6854faf9e81a49, type: 2}
   canPickup: 0
   pickupInstructions: {fileID: 3346246234198472487}
 --- !u!1 &1389737471 stripped
