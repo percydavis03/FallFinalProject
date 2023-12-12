@@ -12929,15 +12929,15 @@ PrefabInstance:
       objectReference: {fileID: 442574052}
     - target: {fileID: 4846114053001567410, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.76
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4846114053001567410, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3
+      value: 0.415
       objectReference: {fileID: 0}
     - target: {fileID: 4846114053001567410, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.32
+      value: 0.462
       objectReference: {fileID: 0}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
@@ -12989,11 +12989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7545813588163140060, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_Radius
-      value: 0.69455487
+      value: 0.33731246
       objectReference: {fileID: 0}
     - target: {fileID: 7545813588163140060, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_Center.x
-      value: 0.27784035
+      value: -0.07940262
       objectReference: {fileID: 0}
     - target: {fileID: 7545813588163140060, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_Center.y
@@ -13001,7 +13001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7545813588163140060, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_Center.z
-      value: -0.16227372
+      value: -0.16227359
       objectReference: {fileID: 0}
     - target: {fileID: 8917989117813871671, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: m_Name
