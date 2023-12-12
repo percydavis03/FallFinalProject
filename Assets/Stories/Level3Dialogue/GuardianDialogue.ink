@@ -42,6 +42,6 @@ I am the Truthseer, Syviis, first of my name.
 ===action1===
 #action
 <i> The guardians step aside. </i>
-
+*[Continue] -> END
 
     -> END
