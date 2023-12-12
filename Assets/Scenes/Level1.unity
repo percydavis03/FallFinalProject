@@ -756,7 +756,7 @@ Transform:
   m_GameObject: {fileID: 101702734}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.655362, z: -0, w: 0.75531495}
-  m_LocalPosition: {x: 34.5, y: -55.2, z: -536.8}
+  m_LocalPosition: {x: 102.8, y: -55.2, z: -671.5}
   m_LocalScale: {x: 33.09116, y: 33.09116, z: 33.09116}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3065,7 +3065,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 921202535}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -6233,7 +6233,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1196479666}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -6871,7 +6871,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 429646044}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -14916,7 +14916,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1025274171}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -15636,7 +15636,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2002432142}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -16317,11 +16317,47 @@ PrefabInstance:
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialog
       value: 
-      objectReference: {fileID: 1224980913}
+      objectReference: {fileID: 1828530127}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: moveSpeed
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1828530127}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: 
+      objectReference: {fileID: 429646044}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1196479666}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[3]
+      value: 
+      objectReference: {fileID: 2002432142}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[4]
+      value: 
+      objectReference: {fileID: 921202535}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[5]
+      value: 
+      objectReference: {fileID: 1025274171}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[6]
+      value: 
+      objectReference: {fileID: 607803220}
+    - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
+      propertyPath: dialogs.Array.data[7]
+      value: 
+      objectReference: {fileID: 986319579}
     - target: {fileID: 5132561657050544625, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialog
       value: 

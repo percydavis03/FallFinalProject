@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
-    public GameObject dialog;
+    public List<GameObject> dialogs = new List<GameObject>();
+    private bool dialogActive;
 
     bool lastJumpPressed = false;
    [SerializeField] float moveSpeed = 25;
@@ -27,10 +28,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        foreach (GameObject dialog in dialogs)
+            {
+            if (dialog.activeInHierarchy)
+            {
+                dialogActive = true;
+                return;
+            }
+            else
+            {
+                dialogActive = false;
+            }
+        }
+
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
-        if (!dialog.activeInHierarchy)
+        if (dialogActive == false)
         {
             transform.position += -transform.forward * moveInput.y * Time.deltaTime * moveSpeed;
             transform.rotation = Quaternion.Euler(Vector3.up * moveInput.x * rotateSpeed * Time.deltaTime) * transform.rotation;
