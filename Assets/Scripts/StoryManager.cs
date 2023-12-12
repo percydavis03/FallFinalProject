@@ -6,6 +6,7 @@ using Ink.Runtime;
 using System;
 using StarterAssets;
 using UnityEngine.InputSystem.Android;
+using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
 {
@@ -168,7 +169,17 @@ public class StoryManager : MonoBehaviour
                 SoundManager.instance.PlaySound(soundName);
                 didSomething = true;
             }
-
+            
+            if (tag.StartsWith("scene;"))
+            {
+                string[] parts = tag.Split(';');
+                string sceneName = parts[1];
+                SceneManager.LoadScene(sceneName);
+                Debug.Log("scenechange");
+                
+                didSomething = true;
+            }
+            
             if (tag.StartsWith("anim;"))
             {
                 string[] parts = tag.Split(';');
