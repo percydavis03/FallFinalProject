@@ -11041,7 +11041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b593eb64bf200bc4281d400e5e8904c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  where: 2
+  where: 3
 --- !u!65 &1337205931
 BoxCollider:
   m_ObjectHideFlags: 0

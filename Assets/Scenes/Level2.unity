@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.22474319, g: 0.10764962, b: 0.17918655, a: 1}
+  m_IndirectSpecularColor: {r: 0.2538995, g: 0.112435795, b: 0.17426449, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b593eb64bf200bc4281d400e5e8904c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  where: 3
+  where: 4
 --- !u!65 &545873704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8475,7 +8475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveAction: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   jumpAction: {fileID: -1916377846673030204, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
-  dialog: {fileID: 1224980913}
+  dialogs: []
   moveSpeed: 25
 --- !u!136 &1921654436
 CapsuleCollider:
