@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDetection: 0
-  DialogBox: {fileID: 0}
+  DialogBox: {fileID: 1224980913}
   ButtonPopup: {fileID: 1547925347}
 --- !u!135 &101702736
 SphereCollider:
