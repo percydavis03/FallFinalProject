@@ -1,5 +1,5 @@
 #you
-#sound;fantasyOp
+#sound;sad
 Hey Lyra! Come over here, check this out.
 *[Continue] -> Lyra1
 

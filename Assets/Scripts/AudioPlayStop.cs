@@ -6,13 +6,13 @@ public class AudioPlayStop : MonoBehaviour
 {
     public AudioSource audioSource;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         audioSource.Play();
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        audioSource = null;
+        audioSource.Stop();
     }
 }
