@@ -13561,6 +13561,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 9.776006
       objectReference: {fileID: 0}
+    - target: {fileID: 595688396540239649, guid: 75c88118195b50a4bbc15d10f113a54e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3100487562164392130, guid: 75c88118195b50a4bbc15d10f113a54e, type: 3}
       propertyPath: m_Name
       value: DialogueFinal

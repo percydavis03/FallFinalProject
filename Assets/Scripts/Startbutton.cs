@@ -7,16 +7,20 @@ using UnityEngine.UI;
 
 public class Startbutton : MonoBehaviour
 {
-    public GameObject button;
+    public Button button;
+    private void TutorialLevel()
+    {
+        SceneManager.LoadScene("TutorialLevel");
+    }
     // Start is called before the first frame update
     void Start()
     {
-        //Startbutton.onClick.AddListener(TutorialLevel)
+        button.onClick.AddListener(TutorialLevel);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //SceneManager.LoadScene(TutorialLevel);
+        
     }
 }
