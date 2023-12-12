@@ -5557,7 +5557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.671548, g: 1, b: 0.2028302, a: 1}
+  m_Color: {r: 0.66216004, g: 0.4503382, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6388,31 +6388,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1536.993
+      value: 1482.645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1536.993
+      value: 1482.645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1536.993
+      value: 1482.645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -500.0801
+      value: -630.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -125.40001
+      value: -131.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 423.29102
+      value: 601.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.32998344
+      value: 0.8709648
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6420,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9439868
+      value: -0.49134544
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6432,7 +6432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -141.464
+      value: -58.858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f057a8fe4026a4d4ea2afcc9088e40e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -14608,11 +14608,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 46af126b31988cc4da0e8445139d1df0, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
