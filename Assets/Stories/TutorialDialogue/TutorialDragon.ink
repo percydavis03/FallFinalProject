@@ -37,7 +37,7 @@ Yeah, yeah, yeah keep talking. You're the one who moved from your family to live
 
 ===letseat===
 #them
-Let's eat!
+Let's eat! Gotta fuel up for some good foraging today!
 *[Eat eggs in purgatory] -> munch
 
 ===munch===
