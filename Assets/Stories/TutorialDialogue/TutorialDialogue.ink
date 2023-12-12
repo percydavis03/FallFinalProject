@@ -81,11 +81,11 @@ Ooh let's just add the shimmerleaf, I can't really stomach the spice this early.
 ===shimmerLyra===
 #them
 #anim;Astarion
-<i>*sighs*</i> Boohoo! You're no fun... but I must oblige. Can you grab me some in the back garden?
+<i>*sighs*</i> Boohoo! You're no fun... either way I was going to do add the dragon's breath, it <i>is</i> in the recipe. And you will get it for me hahah!
 *[Accept] -> endstory
 
 ===endstory===
 #you
 #anim;Smile
-Will do!
+Will do ma'am!
 -> END
