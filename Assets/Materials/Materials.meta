@@ -1,8 +1,14 @@
 fileFormatVersion: 2
-guid: e48789574eafc2141b11b7c753d4b566
+<<<<<<<< HEAD:Assets/Materials/Materials.meta
+guid: 98b6dc36865979d4ca8bc77c26b47a54
 folderAsset: yes
 DefaultImporter:
+========
+guid: 1598dab59376b6f4f81b54a4dfb0fda5
+NativeFormatImporter:
+>>>>>>>> c01aa5226e992ea6b0fbecd2cfd98b9ed3d7e1cb:Assets/Items/Stone.asset.meta
   externalObjects: {}
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

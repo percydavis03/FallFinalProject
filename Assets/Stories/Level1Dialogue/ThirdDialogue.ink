@@ -1,14 +1,17 @@
 #you
+
 Hey Lyra! Come over here, check this out.
 *[Continue] -> Lyra1
 
 ===Lyra1===
 #them
+#sound;sadPiano
 What did you find? Because I was just looking at the most cutest littl-
 *[Continue] -> Lyra2
 
 ===Lyra2===
 #them
+
 How did you find that...
 *[Continue] -> Syviis1
 
@@ -96,8 +99,8 @@ Let go! I plead for the Mother please-
 
 ===Syviisaction3===
 #action
-<i> Because of Lyra's touch, you regain stability from the power of the stone.
-<i>Something seems different... 
+<i> Because of Lyra's touch, you regain stability from the power of the stone.</i>
+<i>Something seems different... </i>
 <i>You pull Lyra to the side away from the Hag Stone.</i>
 *[Continue] -> Syviis6
 

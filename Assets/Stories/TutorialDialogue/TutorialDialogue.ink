@@ -44,7 +44,7 @@ Well, yes... and no. I'm not sure if this requires a Seer's guidance. Any ways..
 
 
 ===ifChose1End===
-#them'
+#them
 #anim;Neutral
 Haha, you should be thanking me! But yes, I do need some help with choosing what to put in the eggs in purgatory I'm making. I was thinking some... dragon's breath for spice... or shimmerleaf for fun and tingles!
 
@@ -81,11 +81,11 @@ Ooh let's just add the shimmerleaf, I can't really stomach the spice this early.
 ===shimmerLyra===
 #them
 #anim;Astarion
-<i>*sighs*</i> Boohoo! You're no fun... but I must oblige. Can you grab me some in the back garden?
+<i>*sighs*</i> Boohoo! You're no fun... either way I was going to do add the dragon's breath, it <i>is</i> in the recipe. And you will get it for me hahah!
 *[Accept] -> endstory
 
 ===endstory===
 #you
 #anim;Smile
-Will do!
+Will do ma'am!
 -> END

@@ -211,10 +211,11 @@ Cherish the purity, as life meets its design.
 
 ===motherDefect4===
 #action
+
 Syviis, your spirit and being bows to my command,
 Farewell, Syviis, your presence fades from all,
 In Luminescira's shadow, where dominion reigns to all.
--> END
+*[Continue] -> EndScene
 
 
 ===motherDestiny1===
@@ -274,7 +275,10 @@ In your power, Syviis, entwine.
 
 ===motherDesChant4===
 #action
+
 Cherish the gift, I, the Great Mother bestows,
 Through you, Luminescira's harmony shall grow.
-
-    -> END
+*[Continue] -> EndScene
+===EndScene===
+#scene;EndScene
+->END
