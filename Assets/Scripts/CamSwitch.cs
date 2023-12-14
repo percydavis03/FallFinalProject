@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class CamSwitch : MonoBehaviour
 {
@@ -9,41 +8,38 @@ public class CamSwitch : MonoBehaviour
     public GameObject Hagstonecam;
     public GameObject Hagstone;
     private bool stoneisActive;
-    private bool itemActive;
-    private List<Item> Itemsholder = new List<Item>();
+
+    public bool gotHagstone;
+
+    private void Start()
+    {
+        gotHagstone = false;
+    }
     void Update()
     {
-        //Itemsholder = InventoryManager.Instance.Items;
-        /*foreach(Item item in Itemsholder)
+        if (gotHagstone == true)
         {
-            if (item.name == "Stone")
+            print(stoneisActive);
+            if (Input.GetKeyDown(KeyCode.C))
             {
-                
-                itemActive = true;
-                return;
-            }
-            
-        }*/
-        print(itemActive);
-        if (Input.GetKeyDown(KeyCode.C) && InventoryManager.Instance.itemActive == true)
-        {
-            print("Active");
-            if (stoneisActive == false)
-            {
-                maincam.SetActive(false);
-                Hagstonecam.SetActive(true);
-                Hagstone.SetActive(true);
-                stoneisActive = true;
-              
-            }
-            else
-            {
-                maincam.SetActive(true);
-                Hagstonecam.SetActive(false);
-                Hagstone.SetActive(false);
-                stoneisActive = false;
+                if (stoneisActive == false)
+                {
+                    maincam.SetActive(false);
+                    Hagstonecam.SetActive(true);
+                    Hagstone.SetActive(true);
+                    stoneisActive = true;
+
+                }
+                else
+                {
+                    maincam.SetActive(true);
+                    Hagstonecam.SetActive(false);
+                    Hagstone.SetActive(false);
+                    stoneisActive = false;
+                }
             }
         }
+       
 
     }
 }
