@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CamSwitch : MonoBehaviour
 {
@@ -13,7 +14,17 @@ public class CamSwitch : MonoBehaviour
 
     private void Start()
     {
-        gotHagstone = false;
+        Scene scene = SceneManager.GetActiveScene();
+            if (scene.name != "Tutorial Level" && scene.name != "Level1")
+        {
+            gotHagstone = true;
+        }
+        else
+        {
+            gotHagstone = false;
+        }
+               
+        
     }
     void Update()
     {

@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItem;
-
+    
     private void Awake()
     {
         Instance = this;
@@ -26,7 +26,8 @@ public class InventoryManager : MonoBehaviour
     {
         Items.Remove(item);
     }
-
+    
+    
     public void ListItems()
     {
         foreach(Transform item in ItemContent)
