@@ -259,13 +259,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223568584}
     m_Modifications:
+    - target: {fileID: 1945318048972823271, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.407955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945318048972823271, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.247197
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945318048972823271, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.51577
+      objectReference: {fileID: 0}
     - target: {fileID: 3910420117323704713, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
       propertyPath: m_Name
       value: DialogueFin (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3910420117323704713, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6466176866411937718, guid: 8173661a6e617dd41afeeafeeee43fdf, type: 3}
       propertyPath: m_Pivot.x
