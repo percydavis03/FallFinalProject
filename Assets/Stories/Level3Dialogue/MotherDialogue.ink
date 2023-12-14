@@ -142,7 +142,7 @@ See, your existence, much like mine, is very crucial to Luminescira and how it t
 
 ===motherNow===
 #them
-You must continue on your path and purify yourself, let me guid you, Syviis born Truthseer.
+You must continue on your path and purify yourself, let me guide you, Syviis born Truthseer.
 *[Continue] ->  mother13
 
 ===motherDestiny===
@@ -219,7 +219,7 @@ In Luminescira's shadow, where dominion reigns to all.
 
 ===EndScene===
 #scene;EndScene
-->END
+*[Continue] -> END
 
 
 ===motherDestiny1===
@@ -285,4 +285,4 @@ Through you, Luminescira's harmony shall grow.
 *[Continue] -> EndScene1
 ===EndScene1===
 #scene;EndScene1
-->END
+*[Continue] -> END
