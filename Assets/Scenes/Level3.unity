@@ -2128,15 +2128,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.163331
+      value: 1.9758015
       objectReference: {fileID: 0}
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.2150426
+      value: 5.460428
       objectReference: {fileID: 0}
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.2150426
+      value: 5.460428
       objectReference: {fileID: 0}
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2144,11 +2144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 391
+      value: 801
       objectReference: {fileID: 0}
     - target: {fileID: 216394636903986301, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -193
+      value: -459
       objectReference: {fileID: 0}
     - target: {fileID: 554127087404917288, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_text
@@ -2382,23 +2382,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7200916809566796717, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.51387
+      value: 1.0180793
       objectReference: {fileID: 0}
     - target: {fileID: 7200916809566796717, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.51387
+      value: 1.0180793
       objectReference: {fileID: 0}
     - target: {fileID: 7200916809566796717, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.51387
+      value: 1.0180793
       objectReference: {fileID: 0}
     - target: {fileID: 7200916809566796717, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 352
+      value: 674
       objectReference: {fileID: 0}
     - target: {fileID: 7200916809566796717, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 41
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 7277589771509201977, guid: 83ec987a4e706f4429fce2bf061d5cb9, type: 3}
       propertyPath: m_Interactable
