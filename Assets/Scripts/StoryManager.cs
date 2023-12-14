@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using Ink.Runtime;
 using System;
 using StarterAssets;
-using UnityEngine.InputSystem.Android;
 using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
