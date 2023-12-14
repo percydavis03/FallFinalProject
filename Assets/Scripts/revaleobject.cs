@@ -5,25 +5,35 @@ using UnityEngine;
 public class revaleobject : MonoBehaviour
 {
     public GameObject itemrenderer;
-    // Start is called before the first frame update
+    public GameObject hagstone;
+    public bool gotHagstone;
+    
     void Start()
     {
-       
+        gotHagstone = false; 
 
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter(Collider other)
+    {
+        gotHagstone = true;
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (gotHagstone == true) 
         {
-            if (!itemrenderer.activeInHierarchy)
+            if (Input.GetKeyDown(KeyCode.C))
             {
-                itemrenderer.SetActive(true);
-            }
-            else
-            {
-                itemrenderer.SetActive(false);
+                if (!itemrenderer.activeInHierarchy)
+                {
+                    itemrenderer.SetActive(true);
+                    hagstone.SetActive(true);
+                }
+                else
+                {
+                    itemrenderer.SetActive(false);
+                    hagstone.SetActive(false);
+                }
             }
         }
     }
