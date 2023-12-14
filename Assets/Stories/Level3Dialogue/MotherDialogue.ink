@@ -217,6 +217,10 @@ Farewell, Syviis, your presence fades from all,
 In Luminescira's shadow, where dominion reigns to all.
 *[Continue] -> EndScene
 
+===EndScene===
+#scene;EndScene
+->END
+
 
 ===motherDestiny1===
 #them
@@ -278,7 +282,7 @@ In your power, Syviis, entwine.
 
 Cherish the gift, I, the Great Mother bestows,
 Through you, Luminescira's harmony shall grow.
-*[Continue] -> EndScene
-===EndScene===
-#scene;EndScene
+*[Continue] -> EndScene1
+===EndScene1===
+#scene;EndScene1
 ->END
