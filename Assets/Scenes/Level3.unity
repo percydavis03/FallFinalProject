@@ -2117,7 +2117,7 @@ MonoBehaviour:
   maincam: {fileID: 488013691}
   Hagstonecam: {fileID: 1192206657}
   Hagstone: {fileID: 1366937988}
-  gotHagstone: 0
+  gotHagstone: 1
 --- !u!1001 &1092559600
 PrefabInstance:
   m_ObjectHideFlags: 0

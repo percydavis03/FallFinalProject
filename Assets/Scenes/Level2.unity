@@ -4270,7 +4270,7 @@ MonoBehaviour:
   maincam: {fileID: 489565361}
   Hagstonecam: {fileID: 1072295629}
   Hagstone: {fileID: 114893538}
-  gotHagstone: 0
+  gotHagstone: 1
 --- !u!1 &2114062941
 GameObject:
   m_ObjectHideFlags: 0
