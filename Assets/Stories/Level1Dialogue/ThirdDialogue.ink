@@ -268,5 +268,25 @@ Lyra I-
 ===Lyra22===
 #them
 I'll see you later.
+*[Continue] -> action5
 
+===action5===
+#action
+<i> You watch as Lyra fades from your vision, into the forest, constantly replaying what you said to her.</i>
+*[Continue] -> action6
+
+===action6===
+#action
+<i> You look at the stone you hold in your hand, and sit down against a tree.</i>
+*[Continue] -> action7
+
+===action7===
+#action
+<i> The stone holds power that you haven't yet touched, but feels all too familiar, something is telling you that this was always supposed to happen...</i>
+
+*[Continue] -> END
+
+===END===
+#scene;DreamScene
 -> END
+
