@@ -28,8 +28,8 @@ Come meet me Syviis
 #action
 <i> Wake up? </i>
 
-*[Wake up] -> END
+*[Wake up] -> seer5
 
-===END===
+===seer5===
 #scene;Level1Duplicate
 -> END

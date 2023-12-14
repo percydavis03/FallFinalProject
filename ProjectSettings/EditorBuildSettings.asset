@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TitleScene.unity
+    path: Assets/Scenes/Titlescene.unity
     guid: ca65436d611d0154285b9d751f539a77
   - enabled: 1
     path: Assets/Scenes/TutorialLevel.unity
@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 8927950029bbe214ca9f424d73a606cb
+  - enabled: 1
+    path: Assets/Scenes/DreamScene.unity
+    guid: 4eb90fda14addd44593c7854bb83669a
+  - enabled: 1
+    path: Assets/Scenes/Level1Duplicate.unity
+    guid: d458bd9aa19bcc244a115f6cf6cc1f72
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
