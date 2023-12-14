@@ -3973,7 +3973,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 529620609}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -4437,7 +4437,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2061650122}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -4635,7 +4635,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 242938077}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -7081,7 +7081,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 774861688}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -8199,7 +8199,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 462237552}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -19593,7 +19593,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 905609902}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -20476,7 +20476,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1406017674}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
