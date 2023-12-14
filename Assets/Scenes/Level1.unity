@@ -4579,7 +4579,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 529620609}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -5241,7 +5241,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 1280934730}
+      objectReference: {fileID: 242938077}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -7766,7 +7766,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 774861688}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -8736,7 +8736,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 462237552}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -14742,6 +14742,10 @@ PrefabInstance:
       value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fcd4f43818fb91c4f9174c42de381395, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fcd4f43818fb91c4f9174c42de381395, type: 3}
       propertyPath: m_TagString
       value: Stone
       objectReference: {fileID: 0}
@@ -20467,7 +20471,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 905609902}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -21350,7 +21354,7 @@ PrefabInstance:
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: DialogBox
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1406017674}
     - target: {fileID: 4940194529621875901, guid: 1ced3782851547142b21cd3053bbb615, type: 3}
       propertyPath: ButtonPopup
       value: 
@@ -27280,24 +27284,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 242938077}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 462237552}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 905609902}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 774861688}
     - target: {fileID: 2428585180767737994, guid: 6d09a3f75ce5f8543aaecec7c9b74b85, type: 3}
       propertyPath: dialogs.Array.data[4]
       value: 

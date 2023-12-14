@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItem;
-    public bool itemActive;
+    
     private void Awake()
     {
         Instance = this;
@@ -26,19 +26,8 @@ public class InventoryManager : MonoBehaviour
     {
         Items.Remove(item);
     }
-    private void Update()
-    {
-        foreach (Item item in Items)
-        {
-            if (item.name == "Stone")
-            {
-
-                itemActive = true;
-                return;
-            }
-
-        }
-    }
+    
+    
     public void ListItems()
     {
         foreach(Transform item in ItemContent)

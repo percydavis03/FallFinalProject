@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
         isTalking = true;
         //curResponseTracker = 0;
         dialogueUI.SetActive(true);
+        print("it works");
         npcName.text = npcName.name;
         //npcDialogueBox.text = npc.dialogue[0];
     }
